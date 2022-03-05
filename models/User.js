@@ -1,6 +1,6 @@
-const mongoose = require('mongooose');
+const mongoose = require('mongoose');
 
-const userSchema = mongoose.schema({
+const userSchema = mongoose.Schema({
     name: {
         type: String,
         maxlength: 50
@@ -26,10 +26,10 @@ const userSchema = mongoose.schema({
     },
     image: String,
     token: {
-        type: String
+        type: String,
     },
     tokenExp: {
-        type: Number
+        type: Number,
     }
 })
 
